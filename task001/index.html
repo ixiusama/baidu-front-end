@@ -9,6 +9,7 @@
 <body>
     <!-- 导航-->
     <header>
+        <!-- H1,h2,h3标签表示标题大小 -->
         <h1>网站一级标题</h1>
         <ul>
             <li><a href="#">网站导航1</a></li>
@@ -100,6 +101,9 @@
             <li>列表项目三</li>
         </ol>
         <table border="1" width="500px">
+            <!-- tr标签表示一行 -->
+            <!-- td标签表示行内的单元格 -->
+            <!-- th标签表示表头 -->
             <caption>下面是一个表格，给表格加一个border＝“1”好看出是一个表格</caption>
             <thead>
                 <tr>
@@ -145,6 +149,9 @@
             <p>
                 <label for="email">请输入邮箱地址：
                     <input autofocus type="email" id="email" placeholder="这是一个文本输入框" />
+                    <!-- placeholder 属性规定可描述输入字段预期值的简短的提示信息（比如：一个样本值或者预期格式的短描述）。
+            该提示会在用户输入值之前显示在输入字段中。
+            注意：placeholder 属性是html5适用于下面的 input 类型：text、search、url、tel、email 和 password。 -->
                 </label>
                 <br> 邮箱地址请按要求格式输入
             </p>
@@ -158,15 +165,16 @@
                 <br> 密码请为6-16位英文数字
             </p>
             <p>
-                性别：
+                <label>性别：<!-- <select> 元素用来创建下拉列表。<select> 元素中的 <option> 标签定义了列表中的可用选项 --></label>
                 <input type="radio" name="性别" value="男" id="man" checked> 男</input>
                 <input type="radio" name="性别" value="女" id="woman"> 女</input>
-                城市：
+                <label>城市：<!-- <select> 元素用来创建下拉列表。<select> 元素中的 <option> 标签定义了列表中的可用选项 --></label>
+                <!-- <select> 元素用来创建下拉列表。<select> 元素中的 <option> 标签定义了列表中的可用选项 -->
                 <option selected="selected">北京</option>
                 <option>北京</option>
                 <option>重庆</option>
                 <option>广西</option>
-                爱好：
+                <label>爱好：<!-- <select> 元素用来创建下拉列表。<select> 元素中的 <option> 标签定义了列表中的可用选项 --></label>
                 <input type="checkbox" name="爱好" value="运动">运动</input>
                 <input type="checkbox" name="爱好" value="艺术">艺术</input>
                 <input type="checkbox" name="爱好" value="科学">科学</input>
