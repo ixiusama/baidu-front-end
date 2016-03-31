@@ -1,219 +1,179 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<title>task005</title>
-	<link type="text/css" rel="stylesheet" href="css/task005.css" />
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link href="./css/task005.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        /*问题：1代码冗杂2名字规范*/
+    </style>
 </head>
-
 <body>
-	<header class="clearfix">
-		<img class="lf" src="images/baidu_logo.png" alt="the logo for the website" />
-		<nav id="header-nav" class="rf">
-			<ul>
-				<li><a href="#">导航链接一</a></li>
-				<li><a href="#">导航链接二</a></li>
-				<li><a href="#">导航链接三</a></li>
-				<li><a href="#">导航链接四</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section class="big-box">
-		
-		<aside id="right-column"> <!--固定宽度的右栏-->
-			<h3>这里以后是个侧栏，这里是侧栏标题</h3>
-			<form action="#" method="post">
-				<label><span class="form-field-title">请输入邮箱地址</span>
-					<input type="text" name="email" placeholder="yourname@mail.com"/>
-				</label>
-				<br /><span class="form-field-tip">邮箱地址请按格式输入</span>
-				<br />
-				<label><span class="form-field-title">请输入密码</span>
-					<input type="password" name="pwd" value="123456" />
-				</label>
-				<br />
-				<label><span class="form-field-title">请重复输入密码</span>
-					<input type="password" value="123456" />
-				</label>
-				<br /><span class="form-field-tip">密码请为6-16位英文数字</span>
-				<br />
-				<div><span class="form-field-title">性别</span>
-				<label>
-					<input type="radio" name="gender" value="m" />男</label>
-				<label>
-					<input type="radio" name="gender" value="f" checked />女</label>
-				</div>
-				<label><span class="form-field-title">城市</span>
-					<select name="city">
-						<option value="beijing" selected>北京</option>
-						<option value="shanghai">上海</option>
-						<option value="guangzhou">广州</option>
-					</select>
-				</label>
-				<br />
-				<div><span class="form-field-title">爱好</span>
-				<label>
-					<input type="checkbox" name="interest" value="sport" />运动</label>
-				<label>
-					<input type="checkbox" name="interest" value="art" checked />艺术</label>
-				<label>
-					<input type="checkbox" name="interest" value="sci" />科学</label>
-				</div>
-				<label><span class="form-field-title">个人描述</span>
-					<textarea name="desc" placeholder="请一句话对你自己进行描述" rows="5" cols="60"></textarea>
-				</label>
-				<br />
-				<button class="submit-button" type="submit">确认提交</button>
-			</form>
-		</aside>
-		
-		<div id="center-column"> <!--自适应宽度的中栏-->
-		<article>
-			<h2>文章一级标题</h2>
-			<h3>文章二级标题</h3>
-			<p>
-				<span class="small-text">文章作者</span>
-				<span class="small-text">文章发表时间</span>
-			</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
-				<br />换行了
-				<br /> 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，
-				<a href="http://ife.baidu.com">链接到ife</a>，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
-			</p>
-			<img src="images/test.png" alt="Baidu LOGO Here"
-			/>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
-				<br />换行了
-				<br /> 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，
-				<a href="http://ife.baidu.com" target="_blank">在新窗口中打开链接到ife</a>，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
-			</p>
-		</article>
 
-		<article>
-			<h2>另一篇文章一级标题</h2>
-			<h3>文章二级标题</h3>
-			<p>
-				<span class="small-text">文章作者</span>
-				<span class="small-text">文章发表时间</span>
-			</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
-				<br />换行了
-				<br /> 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落， 这是一个很长的段落，
-				<a href="http://ife.baidu.com">链接到ife</a>，这是一个很长的段落， 这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，
-			</p>
-			<img src="images/test.png" alt="Baidu LOGO Here"
-			/>
-			<ul style="list-style-type:none; padding-left:40px;">
-				<li>列表项目一</li>
-				<li>列表项目二</li>
-				<li>列表项目三</li>
-			</ul>
-		</article>
-		<article>
-			<h2>图片</h2>
-			<ul id="image-list" style="list-style-type:none;" class="clearfix">
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-				<li>
-					<p>好看的图片</p><img src="images/test.png" alt="one nice image here"
-					/></li>
-			</ul>
-		</article>
+<div id="main">
+    <!--header-->
+    <div class="header">
+        <div class="title">
+            <h1>网站一级标题</h1>
+        </div>
+        <ul>
+            <li><a href="#">导航链接一</a></li>
+            <li><a href="#">导航链接二</a></li>
+            <li><a href="#">导航链接三</a></li>
+            <li><a href="#">导航链接四</a></li>
+        </ul>
+    </div>
 
-		<article>
-			<h2>最后一篇文章一级标题</h2>
-			<h3>文章二级标题</h3>
-			<p>
-				<span class="small-text">文章作者</span>
-				<span class="small-text">文章发表时间</span>
-			</p>
-			<ol style="padding-left:40px;">
-				<li>排名一</li>
-				<li>排名二</li>
-				<li>排名三</li>
-			</ol>
-			<p>下面是一个表格</p>
-			<table id="prize-table">
-				<colgroup>
-					<col />
-					<col />
-					<col />
-				</colgroup>
-				
-				<thead>
-					<tr>
-						<th>名称</th>
-						<th>金额</th>
-						<th>动作</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>单元格1</td>
-						<td>100</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-					<tr>
-						<td>单元格2</td>
-						<td>600</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-					<tr>
-						<td>单元格3</td>
-						<td>300</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-					<tr>
-						<td>单元格4</td>
-						<td>800</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-					<tr>
-						<td>单元格5</td>
-						<td>200</td>
-						<td><a href="#">操作</a></td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td>Total</td>
-						<td colspan="2">2000</td>
-					</tr>
-				</tfoot>	
-			</table>
-		</article>
-		</div>
-		
-	</section>
-	<footer>
-		<p>版权所有&copy;</p>
-	</footer>
+    <!--content-->
+    <div class="content">
+
+        <div class="left">
+            <!--con_article1-->
+            <div class="con_article1">
+                <h2>文章一级标题</h2>
+                <h3>文章二级标题</h3>
+                <div class="author"><a href="#">王五</a> <span>2016.3.20</span></div>
+                <p>这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长这是要一个很长很长这是要一个很长很长这是要一个很长,换行了<br/>这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落是要,换行<br/>这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个<a href="http://ife.baidu.com">我去百度</a>长很长这是要一个很长很长这是要一个很长很长这是要一个很长这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一</p>
+                好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/>
+                <p>这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长这是要一个很长很长这是要一个很长很长这是要一个很长是要一个很长很长这是要一个很长,换行了<br/>这是要一个很长很长很长的段落这是要一个很长很长的段落是要这是要一个很长很长的段落这是要一个很长很长的段落这是要<strong>我是粗体字</strong>一个很长很长的段落这是要一个<a href="http://ife.baidu.com" target="_blank">我去新窗口百度</a>长很长这是要一个很长很长这是要一个很长很长这是要一个很长这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长这是要一个很长很长</p>
+            </div>
+            <!--con_article2-->
+            <div class="con_article2">
+                <h2>另一篇一级标题</h2>
+                <h3>文章2级标题</h3>
+                <div class="author"><a href="#">张三</a> <span>2016.3.20</span></div>
+                <p>这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长这是要一个很长很长这是要一个很长很长这是要一个很长,换行了<br/>这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落是要,换行<br/>这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个<a  href="http://ife.baidu.com">很长很长的段落这是要一个很</a>长很长这是要一个很长很长这是要一个很长很长这是要一个很长这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长很长的段落这是要一个很长</p>
+                <img src="images/baidu_logo.png" alt=""/>
+                <ul>
+                    <li>列表1</li>
+                    <li>列表2</li>
+                    <li>列表3</li>
+                </ul>
+            </div>
+            <!--con_imgs-->
+            <div class="con_imgs">
+                <h2>图片</h2>
+                <dl>
+                    <dt></dt>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                    <dd>好看的图片<br/><img src="images/baidu_logo.png"/><br/><br/></dd>
+                </dl>
+            </div>
+            <!--con_article3-->
+            <div class="con_article3">
+                <h2>另一篇一级标题</h2>
+                <h3>文章2级标题</h3>
+                <div class="author"><a href="#">张三</a> <span>2016.3.20</span></div>
+                <ol type="1">
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+                <table summary="a table for something">
+                    <caption>下面表格border="1"</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">表头</th>
+                        <th scope="col">表头</th>
+                        <th scope="col">表头</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="">操作</a></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>总计</td>
+                        <td colspan="2">1000</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="right">
+            <!--con_article4-->
+            <div class="con_article4">
+                <h2>这了以后是一个侧栏,侧栏标题</h2>
+                <form action="" method="post">
+                    <div class="form_opts">
+                        <label for="email">邮箱：</label>
+                        <input type="text" value=".." name="email" id="email"/>
+                    </div>
+                    <div class="form_tips">按邮箱格式输入</div>
+                    <div class="form_opts">
+                        <label for="pass1">请输入密码：</label>
+                        <input type="password" value=".." name="email" id="pass1"/>
+                    </div>
+                    <div class="form_opts">
+                        <label for="pass2">请再次输入密码：</label>
+                        <input type="password" value=".." name="email" id="pass2"/>
+                    </div>
+                    <div class="form_tips">密码6位数字</div>
+
+                    <div class="form_opts">
+                        <label>性别：</label>
+                        <label> <input type="radio" name="sex"/>男</label>
+                        <label> <input type="radio" name="sex"/>女</label>
+                    </div>
+                    <div class="form_opts">
+                        <label>城市：</label>
+                        <select name="city">
+                            <label> <option value="c1">北京</option></label>
+                            <label> <option value="c2">北京2</option></label>
+                            <label> <option value="c3">北京3</option></label>
+                        </select>
+                    </div>
+                    <div class="form_opts">
+                        <label>爱好：</label>
+                        <input type="checkbox" name="sport"/>运动
+                        <input type="checkbox" name="art"/>艺术
+                        <input type="checkbox" name="science"/>科学
+                    </div>
+                    <div class="form_opts">
+                        <label>个人描述：</label>
+                        <textarea cols="20" rows="6">这是一个多行描述</textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">确认提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <p>版权所有&copy;</p>
+    </div>
+</div>
 </body>
-
 </html>

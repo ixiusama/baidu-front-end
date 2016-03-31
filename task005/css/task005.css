@@ -1,156 +1,183 @@
-@charset "UTF-8";
 
-* {
-	margin: 0;
-	padding: 0;
+body, ul, li, div, a, dl, dd, dt, img, input, label, h3 {
+    padding: 0;
+    margin: 0;
 }
-
-.left {
-	float: left;
-}
-. {
-	float: right;
-}
-.clearfix::after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	height: 0;
-}
-/* simply I put all css code internally here just for this single page*/
 body {
-	width: 100%;
-	font: 15px/2.0 "Microsoft YaHei",sans-serif;
+    background-color: #232323;
+    color: #000000;
 }
-header, footer {
-	width: 100%;
-	height: 60px;
-	color: #fff;
-	background-color: #333;
+#main {
+    width: 1260px;
+    background-color: #DEDEDE;
+    margin: 0 auto;
 }
-footer {
-	text-align: center;
-	line-height: 60px;
+p {
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: 18px;
 }
-#header-nav > ul > li {
-	display: inline-block;
-	margin-right: 20px;
+/*header*/
+.header, .footer {
+    width:100%;
+    height: 60px;
+    background-color: #333;
+    font-size: 13px;
 }
-#header-nav a {
-	color: #fff;
-	text-decoration: none;
-	display: inline-block;
-	height: 60px;
-	line-height: 60px;
+.header .title {
+    float: left;
+    width: 130px;
+    height: 44px;
+    text-indent: -9999px;
+    background: url(../images/baidu_logo.png) no-repeat;
+    margin: 10px 60px;
 }
-#header-nav a:hover {
-	background-color: #f00;
+.header ul {
+    float: right;
 }
-h2 {
-	margin-bottom: 0.5em;
+.header ul li {
+    width: 79px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    margin-left: 30px;
 }
-section.big-box {
-	background-color: #dedede;
-	padding: 20px;
+.header ul li a {
+    text-decoration: none;
+    color: #fff;
 }
-.small-text {
-	font-size: 0.8em;
+.header ul li:hover a {
+    color: #938F90;
 }
-#image-list > li {
-	border: 1px solid #cecece;
-	width: 100px;
-	height: 120px;
-	padding: 10px;
-	text-align: center;
-	margin-bottom: 20px;
-	margin-right: 20px;
-	float: left;
-}
-#image-list > li img {
-	width: 100px;
-	height: 80px;
-	margin-top: 10px;
-}
-#prize-table {
-	width: 100%;
-	border: 1px solid #cecece;
-}
-#prize-table thead {
-	background-color: #000;
-	color: #fff;
-}
-#prize-table col {
-	width: 40%;
-}
-#prize-table col:last-child {
-	width: 20%;
-}
-#prize-table tfoot{
-	background-color: #ccc;
-	font-weight: bold;
-}
-#prize-table tbody tr:nth-child(2n+1) td {
-	border-right: 1px solid #dbdbdb;
-	border-bottom: 1px solid #e6e6e6;
-}
-#prize-table tbody tr:nth-child(2n) td {
-	border-right: 1px solid #dbdbdb;
-	border-bottom: 1px solid #ccc;
+/*content*/
+.content {
+    margin: 22px;
+    position: absolute;
 }
 
-aside#right-column {
-	background-color: #fff;
-	border: 1px solid #999;
-	box-sizing: border-box;
-	width: 400px;
-	float: right;
-	padding: 20px;
+.left{
+    float: left;
+    width: auto;
+    margin-right: 420px;
 }
-div#center-column {
-	margin-right: 384px;
-}
-
-aside#right-column h3 {
-	border-left: 3px solid #ccc;
-	padding-left: 10px;
-	margin-bottom: 10px;
-}
-aside#right-column form {
-	width: 100%;
-	margin: 0 auto;
+.right{
+    position: relative;
+    width: 400px;
+    float: right;
+    margin-left: -400px;
 }
 
-div#center-column > * {
-	background-color: #fff;
-	margin-bottom: 20px;
-	padding: 35px 20px 40px;
+
+.con_article1, .con_article2, .con_article3, .con_article4, .con_imgs {
+    overflow: auto;
+
+    padding: 20px;
+    box-shadow: 2px 2px 1px black;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
 }
-div#center-column > *:last-child {
-	margin-bottom: 0;
+.content .author, .content h3 {
+    color: gray;
+}
+.con_article1 .author a, .con_article2 .author a,.con_article3 .author a {
+    text-decoration: none;
+    color: gray;
+}
+/*.con_article2*/
+.con_article2 ul {
+    margin-left: 20px;
+}
+.con_article2 ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+/*.con_imgs*/
+.con_imgs dl {
+    margin-left: 40px;
+    font-size: 13px;
+}
+.con_imgs img {
+    width: 100px;
+    height: 80px;
+    margin-top: 5px;
+}
+.con_imgs dd {
+    /*ͼƬ����*/
+    float: left;
+    margin-left: 20px;
+
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+/*.con_article3*/
+.con_article3 ol li {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.con_article3 table caption {
+    text-align: left;
+}
+table,tr,td {
+    border: 1px solid #CCCCCC;
+    border-collapse: collapse;
+}
+.con_article3 table {
+    /*�������Ӧ*/
+    width: 100%;
+    height: 150px;
+}
+.con_article3 table thead {
+    background-color: #333333;
+    color: #fff;
+}
+.con_article3 table tfoot {
+    background-color: #ccc;
+}
+/*.con_siderbar*/
+.con_article4 div.form_opts {
+    margin-bottom: 10px;
+}
+.con_article4 label {
+    float: left;
+    width: 40%;
+    text-align: right;
+}
+.con_article4 div.form_tips {
+    margin-left: 40%;
+    margin-bottom: 10px;
+}
+div.btn {
+    text-align: center;
+}
+button {
+    width: 300px;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: blue;
 }
 
-span.form-field-title {
-	display: inline-block;
-	width: 105px;
-	text-align: right;
-	margin-right: 20px;
-	vertical-align: top;
+/*�������*/
+.content:after{
+    content: "";
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    clear: both;
 }
-span.form-field-tip {
-	margin-left: 130px;
-	color: #ccc;
+/*footer ok*/
+.footer {
+    text-align: center;
+    font-weight: bold;
+    color: #E4FFDA;
+    background-color: #000000;
 }
-button.submit-button {
-	width: 100%;
-	height: 40px;
-	background-color: #3355d0;
-	color: #fff;
-	border-radius: 10px;
-	font-weight: bold;
-}
-
-aside#right-column form textarea {
-	width: 190px;
-	height: 100px;
+.footer p {
+    line-height: 60px;
 }
