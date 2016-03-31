@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body {font-family: 微软雅黑,sans-serif;}
+#header {background: #000000;
+}
+#header ul {
+    float:right;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+#header ul li {display:inline-block;}
+#header a {color: white}
+.divbox {
+    border: 1px solid #ccc;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 3px 3px 3px #666;
+}
+.content h3{
+    color: #444444
+}
+.content h5{
+    color: #666666
+}
+.content ul{
+    list-style: none;
+}
+.content p{
+    text-indent: 2em;
+}
+.imgpreview {
+    max-width: 300px;
+    text-align:center;
+}
+.imgpreview p{
+    margin: 1px auto 10px;
+}
+.imgpreview li{
+    border: 1px solid;
+    margin: 20px;
+    padding: 10px;
+    list-style:none;
+}
+.imgpreview img{
+    max-width: 150px;
+    margin: 1px;
+}
+.tab table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.tab table,td,th{
+    font-size: 14px;
+    border: 1px solid #aaaaaa;
+    height: 20px;
+    padding: 5px;
+}
+.tab th{
+    text-align: left;
+    color: white;
+    background-color: #444444;
+}
+#totaltab td{
+    background-color: #aaaaaa;
+    font-weight: bold;
+}
+.formtab td:first-child{
+    text-align: right;
+}
+table.formtab tr td{
+    border: 1px;
+}
+.FormElementStyleLeft label {
+    float: left;
+    width: 30%;
+    text-align: right;
+}
+.FormElementStyleRight p{
+    margin-left: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #dddddd;
+
+}
+button {
+    text-align:center;
+    background-color: #0066ff;
+    width: 100%;
+    height: 50px;
+    font-size: 14pt;
+    color: white;
+    border-radius: 15px;
+}
+footer {
+    text-align: center;
+    background-color: #444444;
+    color: white;
+    height: 50px;
+}
+footer p{
+    padding-top: 10px;
+}

@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background: #ccc;
+    /* margin-top: -100px; */
+    /* margin-left: -200px; */
+}
+.main:before {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    content: '';/* 此属性至关重要 */
+    border-radius: 50%;
+    background: #fc0;
+}
+.main:after {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    content: '';/* 此属性至关重要 */
+    border-radius: 50%;
+    background: #fc0;
+}

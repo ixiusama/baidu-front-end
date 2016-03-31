@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="CN">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -217,31 +217,30 @@
 			<input type="password" placeholder="这是一个文本输入框">
 			<p>密码请为6-16位英文数字</p>
 			<label>性别：</label><!-- 单选框使用radio属性 -->
-			<input type="radio" name="sex" value="male" checked="checked">男</input>
-			<input type="radio" name="sex" value="female">女</input>
+			<label for="xingbie1"><input type="radio" name="sex" id="xingbie1" value="female" checked="checked"/>男 </label>
+			<label for="xingbie2"><input type="radio" name="sex" id="xingbie2" value="female"/>女 </label>
 			<br>
 			<label>城市：<!-- <select> 元素用来创建下拉列表。<select> 元素中的 <option> 标签定义了列表中的可用选项 --></label>
-			<select>
+
+			<label><select>
 				<option selected="selected">北京</option>
 				<option>重庆</option>
 				<option>广西</option>
-			</select>
-			<br>
+			</select></label>
+			<br/>
 			<label>爱好：</label><!-- 多选框使用checkbox属性 -->
-			<input type="checkbox" name="爱好" value="运动">运动</input>
-			<input type="checkbox" name="爱好" value="艺术">艺术</input>
-			<input type="checkbox" name="爱好" value="科学">科学</input>
-			<br>
-			<label>个人描述：</label><!-- 使用<textarea>标签输入多行文本 -->
+				<label for="aihao1"><input type="checkbox" name="aihao[]" id="aihao1" value="sport"/>运动</label>
+				<label for="aihao2"><input type="checkbox" name="aihao[]" id="aihao2" value="art"/>艺术</label>
+				<label for="aihao3"><input type="checkbox" name="aihao[]" id="aihao3" value="science"/>科学
+					<br/>
+					<label>个人描述：</label><!-- 使用<textarea>标签输入多行文本 -->
 			<textarea placeholder="这是一个多行文本框" rows="10" cols="100%"></textarea>
 			<!-- 提交按钮使用submit -->
-			<button type="submit" value="确认提交">确认提交</button>
-		</form>
+			<button type="submit" value="确认提交
 	</div>
 </aside>
 <footer>
 	<p>版权所有&copy;</p>
 </footer>
 </body>
-
-</html> 
+</html>
